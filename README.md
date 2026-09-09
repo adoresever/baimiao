@@ -88,13 +88,13 @@ flowchart LR
 
 当前测试覆盖工作总结、邮件、产品介绍、社交文字、知识解释、人物故事、观点评论和高约束说明。
 
-- 同一批 8 类文本连续运行 4 轮。
+- 当前回归覆盖 8 类文本。
 - 每次请求完整加载 `SKILL.md`、手法案例和评审标准。
 - 请求没有设置 `max_tokens`。
 - 客户端没有设置超时。
-- 第四轮通过原意守恒、零新增事实、文体守恒和高约束保护检查。
+- 当前结果通过原意守恒、零新增事实、文体守恒和高约束保护检查。
 
-查看 [第四轮输出](tests/glm-results.json) 与 [四轮测试报告](tests/glm-evaluation-report.md)。
+查看 [实测输出](tests/glm-results.json) 与 [测试说明](tests/glm-evaluation-report.md)。
 
 复现实验：
 

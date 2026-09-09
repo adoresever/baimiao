@@ -37,8 +37,7 @@ web
 
 ## Evidence on Hand
 
-- `tests/glm-results.json`：GLM-5.2 第四轮的 8 类文本输出。
-- `tests/glm-results-v1.json` 至 `glm-results-v3.json`：前三轮失败样本。
+- `tests/glm-results.json`：GLM-5.2 的 8 类文本实测输出。
 - `references/guided-methods.md`：25 种手法的信号、案例与撤销条件。
 - 测试结论仅覆盖现有样本，不能代表所有模型和全部文体。
 
