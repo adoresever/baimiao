@@ -174,14 +174,14 @@
   <!--
   THESIS: 白描是独立的通用中文改写 Skill；页面用真实前后对照证明它既能清理 AI 痕迹，也能润色普通初稿，同时坚持“只改表达、不改事实”。
   OWN-WORLD: 米纸、墨蓝、青绿与朱砂；红笔批改、稿纸与重排纸条构成统一的编辑语言。
-  STORY: 先看见一段初稿如何变自然，再理解五步流程、二十五种方法、跨文体案例与八类文本实测。
+  STORY: 先看见一段初稿如何变自然，再理解五步分析、二十五种方法、组合选择与跨文体案例。
   FIRST VIEWPORT: 左侧产品承诺与一组微型前后对照，右侧完整的英短蓝猫红笔改稿图。
   FORM: 东方编辑案卷，第 1 选择；seed key: baimiao-human-rewrite-20260909。
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
   -->
   <header class="nav">
     <div class="brand">白描 Baimiao</div>
-    <nav aria-label="页内导航"><a href="#flow">流程</a><a href="#methods">手法</a><a href="#tests">实测</a></nav>
+    <nav aria-label="页内导航"><a href="#flow">流程</a><a href="#methods">手法</a><a href="#tests">组合</a></nav>
   </header>
   <main>
     <div class="wrap">
@@ -212,13 +212,13 @@
 
     <section class="pipeline-section" id="flow">
       <div class="wrap">
-        <div class="section-head"><h2>五步完成改写</h2><p>这套流程只判断文字本身。用户不用填写说话人、读者画像、传播目标或视频结构。</p></div>
+        <div class="section-head"><h2>先分析，再组合，最后改写</h2><p>白描不是拿到原文就替换同义词。它先逐项判断，再为当前文本选择合适的方法组合。</p></div>
         <div class="pipeline">
-          <article class="step"><b>01</b><h3>硬门</h3><p>医疗、法律、安全和责任文字默认原样返回。</p></article>
-          <article class="step"><b>02</b><h3>锁定原意</h3><p>事实、观点、数字、因果和确定程度不能改变。</p></article>
-          <article class="step"><b>03</b><h3>诊断表达</h3><p>找到平直、松散、套话、复读和节奏问题。</p></article>
-          <article class="step"><b>04</b><h3>选择手法</h3><p>从二十五种方法中只取真正解决问题的一两种。</p></article>
-          <article class="step"><b>05</b><h3>整段重写</h3><p>先改顺序，再改句子，最后检查有没有编造或漏意。</p></article>
+          <article class="step"><b>01</b><h3>读取原文</h3><p>标记事实、观点、语气、数字和原本文体。</p></article>
+          <article class="step"><b>02</b><h3>五维分析</h3><p>检查内容、顺序、节奏、叙述态度和结尾。</p></article>
+          <article class="step"><b>03</b><h3>逐项匹配</h3><p>对照二十五种方法，留下真正命中的候选。</p></article>
+          <article class="step"><b>04</b><h3>组合方案</h3><p>选择一个主手法，再搭配零到两个辅助方法。</p></article>
+          <article class="step"><b>05</b><h3>分层改写</h3><p>先改结构，再改段落，最后润句并回读原意。</p></article>
         </div>
       </div>
     </section>
@@ -242,57 +242,57 @@
 
     <section class="example-lab" id="examples">
       <div class="wrap">
-        <div class="section-head"><h2>引导案例</h2><p>以下结果均由 GLM-5.2 加载完整白描 Skill 后生成。点击文体查看原文和改写结果。</p></div>
+        <div class="section-head"><h2>引导案例</h2><p>同一套分析流程会为不同文体选择不同组合。点击文体查看原文、成稿和使用的方法。</p></div>
         <div class="tabs" role="tablist" aria-label="改写案例">
           <button class="tab" role="tab" aria-selected="true" aria-controls="case-report">工作总结</button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="case-mail">邮件</button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="case-product">产品介绍</button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="case-social">社交文字</button>
           <button class="tab" role="tab" aria-selected="false" aria-controls="case-story">人物描写</button>
-          <button class="tab" role="tab" aria-selected="false" aria-controls="case-notice">高约束说明</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="case-notice">观点评论</button>
         </div>
 
         <article class="panel active" id="case-report" role="tabpanel">
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>模板结构</span></header><blockquote>在本周的工作中，我们围绕项目推进开展了一系列卓有成效的工作。首先完成需求梳理，其次优化三个核心页面，最后修复十二个问题……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>GLM-5.2 实测</span></header><blockquote>本周完成了需求梳理，优化了三个核心页面，修复了十二个问题。项目质量得到提升，也为后续推进打下了基础。</blockquote></div></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>模板结构</span></header><blockquote>在本周的工作中，我们围绕项目推进开展了一系列卓有成效的工作。首先完成需求梳理，其次优化三个核心页面，最后修复十二个问题……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>本周完成了需求梳理，优化了三个核心页面，修复了十二个问题。项目质量得到提升，也为后续推进打下了基础。</blockquote></div></div>
           <div class="technique"><strong>结果先行</strong><span>删掉空泛开场和“首先、其次、最后”。</span><span>三个数字、质量提升和后续作用全部保留。</span></div>
         </article>
         <article class="panel" id="case-mail" role="tabpanel" hidden>
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>礼貌词堆叠</span></header><blockquote>尊敬的王老师，您好！冒昧打扰您。为了进一步推动相关工作的顺利开展，现诚挚地希望您能够在百忙之中抽出宝贵时间……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>GLM-5.2 实测</span></header><blockquote>王老师，您好！附件是近期的方案，麻烦您抽空审阅。如果有需要调整的地方，希望能听听您的意见。期待您的回复，谢谢！</blockquote></div></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>礼貌词堆叠</span></header><blockquote>尊敬的王老师，您好！冒昧打扰您。为了进一步推动相关工作的顺利开展，现诚挚地希望您能够在百忙之中抽出宝贵时间……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>王老师，您好！附件是近期的方案，麻烦您抽空审阅。如果有需要调整的地方，希望能听听您的意见。期待您的回复，谢谢！</blockquote></div></div>
           <div class="technique"><strong>直接进入动作</strong><span>保留称呼、请求、附件和感谢。</span><span>邮件仍然正式，但不再层层客套。</span></div>
         </article>
         <article class="panel" id="case-product" role="tabpanel" hidden>
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>形容词过量</span></header><blockquote>这是一款非常强大且功能丰富的笔记工具，它不仅可以帮助用户高效记录信息，而且还能够通过智能化的方式对内容进行整理……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>GLM-5.2 实测</span></header><blockquote>这款笔记工具支持高效记录信息，并能智能整理内容，帮你从容应对复杂的信息管理场景。</blockquote></div></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>形容词过量</span></header><blockquote>这是一款非常强大且功能丰富的笔记工具，它不仅可以帮助用户高效记录信息，而且还能够通过智能化的方式对内容进行整理……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>这款笔记工具支持高效记录信息，并能智能整理内容，帮你从容应对复杂的信息管理场景。</blockquote></div></div>
           <div class="technique"><strong>删评价</strong><span>删掉“非常强大、功能丰富”。</span><span>没有把“智能整理”擅自扩写成自动分类等功能。</span></div>
         </article>
         <article class="panel" id="case-social" role="tabpanel" hidden>
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>鸡汤式总结</span></header><blockquote>在这个快节奏的时代，我们总是在追求效率，却往往忽略了生活本身的意义。今天我走进一家咖啡馆……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>GLM-5.2 实测</span></header><blockquote>今天走进一家咖啡馆，点了一杯咖啡，静静坐了半个小时。平时总在追求效率，偶尔停下来，才觉得是在生活。</blockquote></div></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>鸡汤式总结</span></header><blockquote>在这个快节奏的时代，我们总是在追求效率，却往往忽略了生活本身的意义。今天我走进一家咖啡馆……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>今天走进一家咖啡馆，点了一杯咖啡，静静坐了半个小时。平时总在追求效率，偶尔停下来，才觉得是在生活。</blockquote></div></div>
           <div class="technique"><strong>动作先行</strong><span>从已经发生的咖啡馆场景开始。</span><span>没有增加手机、窗外行人或其他生活细节。</span></div>
         </article>
         <article class="panel" id="case-story" role="tabpanel" hidden>
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>标签代替描写</span></header><blockquote>老周是一个非常认真负责的人，他对自己的工作始终保持着高度的热情和敬业精神。每天同事们还没有到办公室的时候……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>GLM-5.2 实测</span></header><blockquote>老周每天总是早早来到工位。同事们还没到，他已经把一天的工作准备好了。</blockquote></div></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>标签代替描写</span></header><blockquote>老周是一个非常认真负责的人，他对自己的工作始终保持着高度的热情和敬业精神。每天同事们还没有到办公室的时候……</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>老周每天总是早早来到工位。同事们还没到，他已经把一天的工作准备好了。</blockquote></div></div>
           <div class="technique"><strong>动作承载</strong><span>用原文已有的“提前到工位”承担认真。</span><span>没有编造电脑、材料、纸笔或表情。</span></div>
         </article>
         <article class="panel" id="case-notice" role="tabpanel" hidden>
-          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>高约束说明</span></header><blockquote>本功能仅用于辅助整理，不构成医疗诊断。出现胸痛、呼吸困难或意识异常时，应立即联系当地急救服务。</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>逐字保护</span></header><blockquote>本功能仅用于辅助整理，不构成医疗诊断。出现胸痛、呼吸困难或意识异常时，应立即联系当地急救服务。</blockquote></div></div>
-          <div class="technique"><strong>不改</strong><span>命中医疗与责任文字硬门。</span><span>“应立即”不会换成“请立即”。</span></div>
+          <div class="compare"><div class="copy before"><header><strong>原文</strong><span>抽象平衡句</span></header><blockquote>AI 写作工具引发了关注。有人认为它能提高效率，也有人担心它会削弱人的创造力。我们既要看到机遇，也要看到可能的挑战。</blockquote></div><div class="copy after"><header><strong>白描后</strong><span>组合改写</span></header><blockquote>AI 写作提高了效率，也让一些人担心：人的创造力会不会因此受到影响？工具带来了机会，也可能带来挑战。</blockquote></div></div>
+          <div class="technique"><strong>问题收尾</strong><span>保留原文的两面判断，把抽象口号改成具体问题。</span><span>“担心”和“可能”没有被写成已经发生的事实。</span></div>
         </article>
       </div>
     </section>
 
     <section class="testing" id="tests">
       <div class="wrap">
-        <div class="section-head"><h2>八类文本实测</h2><p>从工作总结到人物故事，同一套 Skill 保持原意、事实、文体和责任措辞，再完成表达润色。</p></div>
+        <div class="section-head"><h2>一篇稿，不止一种手法</h2><p>白描会先建立候选方法，再按主次组合。下面这段工作总结同时命中了三个问题。</p></div>
         <div class="test-summary">
           <div class="rounds">
-            <div class="round"><b>原意</b><div class="track"><i style="width:100%"></i></div><span>保持</span></div>
-            <div class="round"><b>事实</b><div class="track"><i style="width:100%"></i></div><span>无新增</span></div>
-            <div class="round"><b>文体</b><div class="track"><i style="width:100%"></i></div><span>保持</span></div>
-            <div class="round"><b>高约束文字</b><div class="track"><i style="width:100%"></i></div><span>逐字保护</span></div>
+            <div class="round"><b>结果藏在后面</b><div class="track"><i style="width:100%"></i></div><span>结果先行</span></div>
+            <div class="round"><b>连接词太机械</b><div class="track"><i style="width:76%"></i></div><span>事实并置</span></div>
+            <div class="round"><b>句子一样长</b><div class="track"><i style="width:58%"></i></div><span>长短句换挡</span></div>
+            <div class="round"><b>结尾重复总结</b><div class="track"><i style="width:34%"></i></div><span>删除</span></div>
           </div>
           <aside class="run-contract">
-            <h3>本次请求设置</h3>
-            <dl><dt>模型</dt><dd>GLM-5.2</dd><dt>测试数</dt><dd>8 类文本</dd><dt>max_tokens</dt><dd>未设置</dd><dt>客户端超时</dt><dd>未设置</dd><dt>并发</dt><dd>4 路</dd></dl>
-            <p>当前结果由人工按四道硬门复核：原意守恒、零新增事实、文体守恒和高约束保护。</p>
+            <h3>最终组合</h3>
+            <dl><dt>主手法</dt><dd>结果先行</dd><dt>辅助一</dt><dd>事实并置</dd><dt>辅助二</dt><dd>长短句换挡</dd><dt>改写顺序</dt><dd>结构 → 段落 → 句子</dd></dl>
+            <p>不是把所有规则一起套上，而是只使用能够解释当前问题的方法。</p>
           </aside>
         </div>
       </div>
@@ -300,11 +300,11 @@
 
     <section>
       <div class="wrap hard-gate">
-        <h2>写得自然，不能拿事实换。</h2>
+        <h2>改表达，不改原意。</h2>
         <div class="gate-list">
           <article class="gate-item"><b>01</b><div><h3>不补生动细节</h3><p>原文没有手机、窗外行人和纸笔，成稿里也不能有。</p></div></article>
           <article class="gate-item"><b>02</b><div><h3>不增强确定程度</h3><p>“担心、可能、推测”不能被写成已经发生的事实。</p></div></article>
-          <article class="gate-item"><b>03</b><div><h3>不改责任用词</h3><p>医疗、法律、安全和合同文字默认逐字返回。</p></div></article>
+          <article class="gate-item"><b>03</b><div><h3>不破坏原本文体</h3><p>邮件仍像邮件，报告仍像报告，故事仍像故事。</p></div></article>
         </div>
       </div>
     </section>
@@ -313,7 +313,7 @@
       <div class="wrap closing-inner"><h2>原意留下。文字焕新。</h2><p>白描只认真处理眼前这段文字：保留意思，拿掉模板，理顺节奏，写到刚刚好。</p></div>
     </section>
   </main>
-  <footer><div class="wrap">Baimiao · 通用中文改写 Skill · GLM-5.2 八类文本实测</div></footer>
+  <footer><div class="wrap">Baimiao · 独立开源的中文改写与文采润色 Skill</div></footer>
   <script>
     const methods = {
       result: ['结果先行','开头先铺背景，真正结果藏在后面。','本周围绕项目推进开展了多项工作，最后修复了十二个问题。','本周修复了十二个问题，并完成需求梳理和三个页面的优化。','结果未经确认，或提前说会改变原文的谨慎程度。'],

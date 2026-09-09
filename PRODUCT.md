@@ -24,7 +24,7 @@ web
 
 ## Capabilities and Constraints
 
-- 先检查高约束文字，再决定是否改写。
+- 先标记原文中不能改变的事实、语气和责任措辞。
 - 锁定事实、观点、数字、因果、责任与确定程度。
 - 根据原文问题选择少量写作手法。
 - 不增加原文没有提供的动作、场景、数字、引语、心理或情绪。
@@ -37,9 +37,8 @@ web
 
 ## Evidence on Hand
 
-- `tests/glm-results.json`：GLM-5.2 的 8 类文本实测输出。
 - `references/guided-methods.md`：25 种手法的信号、案例与撤销条件。
-- 测试结论仅覆盖现有样本，不能代表所有模型和全部文体。
+- `references/casebook.md`：不同文体的分析、组合与分层改写案例。
 
 ## Product Principles
 
