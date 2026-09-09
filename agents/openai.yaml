@@ -1,0 +1,4 @@
+interface:
+  display_name: "白描"
+  short_description: "把中文初稿改得自然、准确、有分寸和文采"
+  default_prompt: "使用 $baimiao 改写下面这段中文，保留原意和文体，只输出改写后的完整文本。"
