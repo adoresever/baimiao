@@ -14,6 +14,32 @@
 
 AI 初稿可以用，普通的人类初稿也可以用。清理 AI 痕迹只是其中一种用途。
 
+## 安装
+
+### Codex
+
+```bash
+git clone https://github.com/adoresever/baimiao.git ~/.codex/skills/baimiao
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/adoresever/baimiao.git ~/.claude/skills/baimiao
+```
+
+### 其他 Agent
+
+把整个仓库复制到该工具能够读取的 Skills 目录，并确保入口文件仍为 `baimiao/SKILL.md`。白描不依赖某一家模型或某一个客户端。
+
+安装后可以直接调用：
+
+```text
+使用 $baimiao 润色下面这段中文，保留原意和文体，只输出改写后的完整文本。
+
+[原文]
+```
+
 ## 它怎样改一段文字
 
 | 1. 分析原文 | 2. 匹配手法 | 3. 组合方案 | 4. 分层改写 | 5. 回读交付 |
@@ -68,8 +94,6 @@ AI 初稿可以用，普通的人类初稿也可以用。清理 AI 痕迹只是�
 
 使用组合：`动作承载` + `情绪延迟`。
 
-更多可交互案例见 [白描介绍页](showcase/index.html)。
-
 ## 使用方法
 
 把仓库作为 Skill 安装到支持项目指令或 Skills 的智能体中，然后直接提供原文：
@@ -99,9 +123,10 @@ baimiao/
 ├── SKILL.md                         核心执行规则
 ├── agents/openai.yaml              Skill 展示信息
 ├── references/guided-methods.md    25 种手法与引导案例
+├── references/casebook.md          不同文体的组合案例
 ├── references/review-rubric.md     改写质量检查
 ├── assets/                         项目视觉素材
-└── showcase/index.html             可交互介绍页
+└── scripts/validate_package.py     包结构校验
 ```
 
 ## 校验

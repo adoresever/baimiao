@@ -13,11 +13,9 @@ REQUIRED = [
     "SKILL.md",
     "LICENSE",
     "README.md",
-    "PRODUCT.md",
     "agents/openai.yaml",
     "references/guided-methods.md",
     "references/review-rubric.md",
-    "showcase/index.html",
     "assets/baimiao-writing-hero.png",
     "assets/baimiao-writing-hero.prompt.md",
 ]
@@ -45,7 +43,7 @@ def main() -> int:
         if phrase not in skill:
             errors.append(f"SKILL.md missing contract: {phrase}")
 
-    public_paths = [ROOT / "SKILL.md", ROOT / "README.md", ROOT / "showcase/index.html"]
+    public_paths = [ROOT / "SKILL.md", ROOT / "README.md"]
     for path in public_paths:
         text = path.read_text(encoding="utf-8")
         for token in FORBIDDEN_PUBLIC:
